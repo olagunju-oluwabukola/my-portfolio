@@ -5,7 +5,7 @@
     I'm Olagunju  Oluwabukola Sussanah. I live in Nigeria, where I hope to design the future.
  </div>
  <div class="mb-3">
-    I’m Olagunju  Oluwabukola Sussanah, a Software Engineer professional experience
+    I’m Olagunju  Oluwabukola Sussanah, a Software Engineer with professional experience
      in building user interfaces for 
     digital web products. I prioritize excellence, simplicity 
     and speed with a goal to deliver high-quality work that exceed expectations. <br>

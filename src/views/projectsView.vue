@@ -33,7 +33,7 @@ data(){
     projects: [
       {
         title: 'Gericht',
-        description: 'Gericht is a  multipage web app  that demonstrates the usage of Vue.js, firebase, vue router, axios and Tailwind CSS in creating a web application for resturant usage. I has features like blog post, Newsletter subscription and reservation.',
+        description: 'Gericht is a  multipage web app  that demonstrates the usage of Vue.js, firebase, vue router, axios and Tailwind CSS in creating a web application for resturant usage. It has features like blog post, Newsletter subscription and reservation.',
         link: 'https://gericht-resturant-app.netlify.app/',
         img: img1
       },
@@ -45,13 +45,13 @@ data(){
       },
       {
         title: 'Ecommerce landing Page',
-        description: 'CwetheinShop is an onine store landing page that allows you to buy shoes,  also has a mockup payment option and also a product carousel to showcase the available products.',
+        description: 'CwetheinShop is an online store landing page that allows you to buy shoes,  also it has a mockup payment option and also a product carousel to showcase the available products.',
         link: 'https://guileless-cendol-00a6a8.netlify.app/',
         img: img2
       },
       {
         title: 'Expansion Cybertech Sales Landing page',
-        description: 'Expansion Cybertech Sales Landing page is a multipage web application showing the details of services the company provides interms of website services. It is a fully responsive app made with vuejus and tailwind css.',
+        description: 'Expansion Cybertech Sales Landing page is a multipage web application showing the details of services the company provides interms of website services. It is a fully responsive app developed with vuejus and tailwind css.',
         link: 'https://ect-sales-page.vercel.app/',
         img: img3
       },

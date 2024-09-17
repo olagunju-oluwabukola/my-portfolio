@@ -2,8 +2,8 @@
 <template>
   <nav class="bg-black text-white px-6 py-4 flex justify-between items-center">
     <div class="flex justify-center">
-      <router-link to="/" class="hover:text-gray-400">
-        <h1 class="text-3xl font-serif text-yellow font-bold">OOS</h1>
+      <router-link to="/">
+        <img src="/logo.png" class="filter brightness-150 contrast-200 h-7 md:h-12" alt="">
       </router-link>
     </div>
 
@@ -79,4 +79,6 @@ export default {
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
+
+
 </style>
