@@ -1,5 +1,5 @@
 <template>
-    <div class="container mx-auto">
+    <div class="container ">
       <h2 class="font-bold text-3xl md:text-5xl mx-5 md:mx-10 my-5 md:my-10">Work Experience</h2>
   
     
@@ -81,7 +81,7 @@
   
   .absolute {
     position: absolute;
-    /* Adjust this value for positioning the line correctly between logos */
+   
     left: 50%;
     transform: translateX(-50%);
   }
