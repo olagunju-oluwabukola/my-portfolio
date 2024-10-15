@@ -21,12 +21,12 @@
   </section>
   
 </template>
-
 <script>
 import img1 from '/gericht.png'
 import img2 from '/cweinshop.png'
 import img3 from '/ect.png'
 import img4 from '/unicorn.png'
+import img5 from '/capture.png'
 export default {
 data(){
   return {
@@ -36,6 +36,12 @@ data(){
         description: 'Gericht is a  multipage web app  that demonstrates the usage of Vue.js, firebase, vue router, axios and Tailwind CSS in creating a web application for resturant usage. It has features like blog post, Newsletter subscription and reservation.',
         link: 'https://gericht-resturant-app.netlify.app/',
         img: img1
+      },
+      {
+      title: 'She Code Africa Website Replication (In Progress)',
+      description: 'A replication of the She Code Africa website aimed at enhancing my understanding of Vue.js routing. This project involves creating a multipage layout, mimicking the structure and design of the original website to gain hands-on experience with navigation and route management. The project is currently in progress.',
+      link: 'https://sca-clone.vercel.app/',
+      img: img5
       },
       {
         title: 'Unicorn Tap',
@@ -55,6 +61,8 @@ data(){
         link: 'https://ect-sales-page.vercel.app/',
         img: img3
       },
+     
+
       
     
     ]
