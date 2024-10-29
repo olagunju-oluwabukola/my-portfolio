@@ -27,6 +27,7 @@ import img2 from '/cweinshop.png'
 import img3 from '/ect.png'
 import img4 from '/unicorn.png'
 import img5 from '/capture.png'
+import img6 from '/crappo.png'
 export default {
 data(){
   return {
@@ -61,6 +62,12 @@ data(){
         link: 'https://ect-sales-page.vercel.app/',
         img: img3
       },
+      {
+    title: 'Crappo',
+    description: 'Crappo is a landing page made with react and TailwindCss.',
+    link: 'https://crappo-hazel.vercel.app/',
+    img: img6
+}
      
 
       
