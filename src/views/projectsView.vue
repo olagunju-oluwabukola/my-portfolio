@@ -66,16 +66,7 @@ export default {
           link: 'https://sca-clone.vercel.app/',
           logo: '/sca.svg',
         },
-        {
-          title: 'Unicorn Tap',
-          link: 'https://unicorn-tap-landing-page.vercel.app/',
-          logo: '🦄',
-        },
-        {
-          title: 'Ecommerce Landing Page',
-          link: 'https://guileless-cendol-00a6a8.netlify.app/',
-          logo: '🛒',
-        },
+        
         {
           title: 'Expansion Cybertech Sales Landing Page',
           link: 'https://ect-sales-page.vercel.app/',
