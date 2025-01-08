@@ -14,7 +14,7 @@
     </div>
 
     <div>
-      <img class="w-[1000px] rounded-xl" src="/20240915_215902.jpg" alt="" />
+      <img class="w-[1000px] rounded-xl" src="/meee.jfif" alt="" />
      <a href="../assets/Oluwabukola OLAGUNJU-Resume.pdf" download="Oluwabukola_Resume.pdf" class="bg-yellow-500 ml-2 rounded-xl text-white p-3 mt-3 cursor-pointer">
     Download Resume
     </a>
