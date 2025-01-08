@@ -1,7 +1,7 @@
 <template>
   <div class="font-bold text-3xl md:text-5xl text-center mt-2 md:mt-5">
     
-    Visit my profile on  <a href=" https://medium.com/@olagunjuoluwabukola2018/" class="underline">Medium</a> to read my articles.
+    Visit my profile on  <a href=" https://medium.com/@olagunjuoluwabukola2018/" class="underline">Medium</a> to read some of my articles😊.
     
    </div>
    <a href=" https://medium.com/@olagunjuoluwabukola2018/" target="_blank" rel="noopener noreferrer">

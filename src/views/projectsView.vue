@@ -11,120 +11,93 @@
     </div>
 
     <div class="grid md:grid-cols-2 gap-10 md:mx-10 mt-5 md:mt-8">
-      <div
+      <a
         v-for="project in projects"
         :key="project.title"
-        class="relative group"
+        :href="project.link"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="border rounded-lg shadow-lg p-4 flex justify-between items-center px-5 md:px-10 transition-transform transform hover:scale-105"
       >
-        <a
-          :href="project.link"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="block"
-        >
-          <!-- Image -->
-          <img
-            :src="project.img"
-            class="md:h-72 w-full object-cover rounded-lg shadow-lg transition-transform duration-300 group-hover:scale-105"
-          />
-          <!-- Centered Button -->
-          <div
-            class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-          >
-            <button
-              class="bg-blue-500 text-white px-4 py-2 rounded-full flex items-center gap-2 hover:bg-blue-700"
-            >
-              Explore
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5 rotate-120"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M14 5l7 7m0 0l-7 7m7-7H3"
-                />
-              </svg>
-            </button>
-          </div>
-        </a>
-      </div>
+
+        <div class="h-12 w-12 flex items-center justify-center bg-gray-200 rounded-full">
+          
+          <template v-if="isImage(project.logo)">
+            <img :src="project.logo" :alt="project.title + ' logo'" class="w-full h-full object-contain rounded-full" />
+          </template>
+          <template v-else>
+            <span class="text-lg font-bold">{{ project.logo }}</span>
+          </template>
+        </div>
+        
+        <div class="font-semibold">{{ project.title }}</div>
+      </a>
     </div>
   </section>
 </template>
 
 <script>
-import img7 from '/rednotice.png';
-import img8 from '/Artsy.png';
-import img9 from '/ppds.png';
-import img1 from '/gericht.png';
-import img2 from '/cweinshop.png';
-import img3 from '/ect.png';
-import img4 from '/unicorn.png';
-import img5 from '/capture.png';
-
-
 export default {
   data() {
     return {
       projects: [
-      {
+        {
           title: 'Artsy',
           link: 'https://artsy-lovat.vercel.app/',
-          img: img8,
+          logo: '🎨',
         },
         {
           title: 'Ppds',
           link: 'https://ppds-4ifk.vercel.app/',
-          img: img9,
+          logo: '/ppds.jfif',
         },
         {
           title: 'Red Notice',
           link: 'https://red-notice-wdyt.vercel.app/',
-          img: img7,
+          logo: '/rednotice.svg',
         },
         {
           title: 'Gericht',
           link: 'https://gericht-resturant-app.netlify.app/',
-          img: img1,
+          logo: '🍽️',
         },
         {
-          title: 'She Code Africa Website Replication (In Progress)',
+          title: 'She Code Africa Website Replication',
           link: 'https://sca-clone.vercel.app/',
-          img: img5,
+          logo: '/sca.svg',
         },
         {
           title: 'Unicorn Tap',
           link: 'https://unicorn-tap-landing-page.vercel.app/',
-          img: img4,
+          logo: '🦄',
         },
         {
           title: 'Ecommerce Landing Page',
           link: 'https://guileless-cendol-00a6a8.netlify.app/',
-          img: img2,
+          logo: '🛒',
         },
         {
           title: 'Expansion Cybertech Sales Landing Page',
           link: 'https://ect-sales-page.vercel.app/',
-          img: img3,
+          logo: '/logo-combo-new.png',
         },
-       
       ],
     };
+  },
+  methods: {
+    isImage(logo) {
+
+      return logo.startsWith('/') || logo.startsWith('http');
+    },
   },
 };
 </script>
 
 <style>
-
-.group-hover\:scale-105:hover {
+.hover\:scale-105:hover {
   transform: scale(1.05);
 }
-.group-hover\:opacity-100:hover {
-  opacity: 1;
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
 }
 </style>

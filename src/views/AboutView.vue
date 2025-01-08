@@ -35,8 +35,8 @@
   </section>
 
   <div class="">
-    <p class="font-bold text-2xl md:text-5xl mb-6 md:mx-10">Expertise</p>
-    <div class="md:mx-10">
+    <p class="font-bold text-2xl md:text-5xl mb-6 mx-10">Expertise</p>
+    <div class="mx-10">
       I've spent few years working on my skills. In no particular order, here are a few of them.
     </div>
   </div>
