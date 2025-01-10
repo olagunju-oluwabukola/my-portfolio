@@ -5,7 +5,7 @@
     </h2>
 
     <div class="relative">
-      <div class="border-l-4 border-green-500 absolute left-8 top-0 bottom-0"></div>
+      <div class="border-l-2 border-green-500 absolute left-7 top-0 bottom-0"></div>
 
       <div v-for="(step, index) in steps" :key="index" class="mb-10 flex items-start relative">
         <div class="w-20 flex flex-col items-center">

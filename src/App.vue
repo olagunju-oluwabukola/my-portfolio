@@ -1,17 +1,16 @@
-
 <template>
-  <nav class="bg-black text-white px-6 py-4 flex justify-between items-center">
+  <nav class="bg-black text-white px-6 py-4 flex justify-between items-center fixed top-0 left-0 w-full z-50">
     <div class="flex justify-center">
       <router-link to="/">
-        <img src="/logo.png" class="filter brightness-150 contrast-200 h-7 md:h-12" alt="">
+        <img src="/logo.png" class="filter brightness-150 contrast-200 h-7 md:h-12" alt="Logo">
       </router-link>
     </div>
 
     <div class="hidden lg:flex space-x-6 mr-12">
       <router-link to="/" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Home</router-link>
-      <router-link to="/about" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">About</router-link>
-      <router-link to="/blog" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Blog</router-link>
-      <router-link to="/project" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Project</router-link>
+      <a href="#about" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">About</a>
+      <a href="#blog" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Blog</a>
+      <a href="#project" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Project</a>
     </div>
 
     <button @click="toggleMenu" class="lg:hidden">
@@ -21,26 +20,36 @@
     </button>
 
     <transition name="fade" @before-enter="beforeEnter" @enter="enter" @leave="leave">
-      <div v-if="menuOpen" class="lg:hidden absolute top-14 left-0 w-full bg-black flex flex-col space-y-4 px-6 py-4">
-        <router-link to="/" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Home</router-link>
-        <router-link to="/about" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">About</router-link>
-        <router-link to="/blog" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Blog</router-link>
-        <router-link to="/project" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Project</router-link>
+      <div 
+        v-if="menuOpen" 
+        class="lg:hidden absolute top-14 left-0 w-full bg-black flex flex-col space-y-4 px-6 py-4"
+      >
+        <router-link 
+          to="/" 
+          class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1"
+          @click.native="collapseMenu"
+        >
+          Home
+        </router-link>
+        <a href="#about" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1" @click="collapseMenu">About</a>
+        <a href="#blog" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1" @click="collapseMenu">Blog</a>
+        <a href="#project" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1" @click="collapseMenu">Project</a>
       </div>
     </transition>
   </nav>
 
-  <div>
-    <router-view/>
+  <div class="mt-20"> 
+    <router-view />
   </div>
 
   <footer>
-    <footer-comp/>
+    <footer-comp />
   </footer>
 </template>
 
 <script>
 import FooterComp from './components/FooterComp.vue';
+
 export default {
   components: { FooterComp },
   data() {
@@ -52,11 +61,14 @@ export default {
     toggleMenu() {
       this.menuOpen = !this.menuOpen;
     },
+    collapseMenu() {
+      this.menuOpen = false;
+    },
     beforeEnter(el) {
       el.style.opacity = 0;
     },
     enter(el, done) {
-      el.offsetHeight; // trigger reflow
+      el.offsetHeight; 
       el.style.transition = 'opacity 0.5s';
       el.style.opacity = 1;
       done();
@@ -65,12 +77,13 @@ export default {
       el.style.transition = 'opacity 0.5s';
       el.style.opacity = 0;
       done();
-    }
+    },
   },
 };
 </script>
 
 <style scoped>
+
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
 }
@@ -78,5 +91,12 @@ export default {
   opacity: 0;
 }
 
+nav {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+body {
+  margin: 0;
+  padding: 0;
+}
 </style>
