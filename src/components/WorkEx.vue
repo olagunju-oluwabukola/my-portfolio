@@ -4,33 +4,25 @@
       Work Experience
     </h2>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <div v-for="(step, index) in steps" :key="index" class="relative">
-        <div class="flex items-start mb-10 relative">
-          <div class="flex flex-col items-center mr-8 relative">
-            <!-- Logo -->
-            <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-green-500 p-2 z-10">
-              <img :src="step.logo" :alt="step.company + ' logo'" class="w-full h-full object-contain">
-            </div>
+    <div class="relative">
+      <div class="border-l-4 border-green-500 absolute left-8 top-0 bottom-0"></div>
 
-            <!-- Vertical Line -->
-            <div 
-              v-if="index < steps.length - 1" 
-              class="absolute top-[100%] left-1/2 w-px h-full bg-gray-300"
-            ></div>
+      <div v-for="(step, index) in steps" :key="index" class="mb-10 flex items-start relative">
+        <div class="w-20 flex flex-col items-center">
+          <div class="flex items-center justify-center w-14 h-14 rounded-full bg-white border-2 border-green-500 p-2 z-10">
+            <img :src="step.logo" :alt="step.company + ' logo'" class="w-full h-full object-contain">
           </div>
+          <div
+            v-if="index < steps.length - 1"
+            class="w-px h-full bg-gray-300 mt-4"
+          ></div>
+        </div>
 
-          <!-- Experience Card -->
-          <div class="experience-card">
-            <div class="flex items-center">
-              <div>
-                <h3 class="text-lg font-bold">{{ step.company }}</h3>
-                <p class="text-sm">{{ step.title }}</p>
-              </div>
-            </div>
-            <p class="text-sm mt-2">{{ step.date }}</p>
-            <p class="text-sm mt-4">{{ step.description }}</p>
-          </div>
+        <div class="ml-8 experience-card">
+          <h3 class="text-lg font-bold">{{ step.company }}</h3>
+          <p class="text-sm text-green-500">{{ step.title }}</p>
+          <p class="text-sm mt-1 text-gray-500">{{ step.date }}</p>
+          <p class="text-sm mt-4">{{ step.description }}</p>
         </div>
       </div>
     </div>
@@ -83,6 +75,10 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  padding: 2.5rem 1.25rem;
+}
+
 .experience-card {
   background-color: white;
   padding: 1.5rem;
@@ -95,17 +91,11 @@ export default {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.container {
-  padding: 2.5rem 1.25rem;
-}
-
 .relative {
   position: relative;
 }
 
 .absolute {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
 }
 </style>

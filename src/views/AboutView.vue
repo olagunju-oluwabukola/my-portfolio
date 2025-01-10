@@ -14,8 +14,13 @@
     </div>
 
     <div>
-      <img class="w-[1000px] rounded-xl" src="/meee.jfif" alt="" />
-     <a href="../assets/Oluwabukola OLAGUNJU-Resume.pdf" download="Oluwabukola_Resume.pdf" class="bg-yellow-500 ml-2 rounded-xl text-white p-3 mt-3 cursor-pointer">
+      <img 
+  class="md:w-[900px] rounded-full border border-yellow-500 shadow-[0_0_10px_5px_rgba(255,223,0,0.75)]" 
+  src="/meee.jfif" 
+  alt="Profile Picture" 
+/>
+
+     <a href="/assets/Oluwabukola Olagunju Resumê.pdf" download="Oluwabukola_Resume.pdf" class="bg-yellow-500 ml-2 rounded-xl text-white p-3 mt-3 cursor-pointer">
     Download Resume
     </a>
       <div class="flex mt-3">
