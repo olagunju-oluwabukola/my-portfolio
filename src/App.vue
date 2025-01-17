@@ -27,7 +27,7 @@
         <router-link 
           to="/" 
           class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1"
-          @click.native="collapseMenu"
+          @click="collapseMenu"
         >
           Home
         </router-link>
@@ -83,7 +83,6 @@ export default {
 </script>
 
 <style scoped>
-
 .fade-enter-active, .fade-leave-active {
   transition: opacity 0.5s;
 }
