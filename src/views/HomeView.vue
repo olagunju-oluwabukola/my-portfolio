@@ -1,5 +1,6 @@
 <template>
-  <section class="md:flex mx-5 md:mx-10 my-5 md:my-5">
+  <section class="md:flex mx-5 md:mx-10 my-5 md:my-5" id="about"
+  >
     <div class="grid place-item-center">
       <h1 class="font-bold text-3xl  md:text-5xl about">Frontend Software Engineer & Technical Writer</h1>
       <p class="md:text-xl text-sm mt-3">I’m Olagunju Oluwabukola Sussanah, a Software Engineer with 
@@ -62,7 +63,8 @@
   </div>
 
   <work-ex/>
-  <section class="mx-5 project">
+  <section class="mx-5" id="project"
+  >
     <div class="font-bold text-3xl md:text-5xl mx-5 md:mx-10 my-5 md:my-10">
       Welcome to my Projects Showcase
     </div>

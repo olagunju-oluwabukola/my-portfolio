@@ -33,7 +33,7 @@
           Home
         </router-link>
         <a href="#about" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1" @click="collapseMenu">About</a>
-        <a href="#blog" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1" @click="collapseMenu">Blog</a>
+        <a href="#blog-section"  class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1" @click="collapseMenu">Blog</a>
         <a href="#project" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1" @click="collapseMenu">Project</a>
       </div>
     </transition>
