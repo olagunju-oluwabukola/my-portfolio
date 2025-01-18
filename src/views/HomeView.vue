@@ -18,7 +18,7 @@
   alt="Profile Picture" 
 />
 
-     <a href="/assets/Oluwabukola Olagunju Resumê.pdf" download="Oluwabukola_Resume.pdf" class="bg-yellow-500 ml-2 rounded-xl text-white p-3 mt-3 cursor-pointer">
+     <a href="https://drive.google.com/file/d/1-3JPvbeVqxrZVhhA8u_lpeafFE7soBxX/view?usp=sharing" download="Oluwabukola_Resume.pdf" class="bg-yellow-500 ml-2 rounded-xl text-white p-3 mt-3 cursor-pointer">
     Download Resume
     </a>
       <div class="flex mt-3">
