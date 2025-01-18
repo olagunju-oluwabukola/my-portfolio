@@ -98,7 +98,7 @@
     </div>
   </section>
 
-  <div class="blog mt-10">
+  <div class="mt-10" id="blog-section"> 
     <div class="font-bold text-3xl md:text-5xl text-center mt-2 md:mt-5">
     
     Visit my profile on  <a href=" https://medium.com/@olagunjuoluwabukola2018/" class="underline">Medium</a> to read some of my articles😊.
@@ -124,7 +124,7 @@ export default {
       projects: [
         {
           title: 'Artsy',
-          link: 'https://artsy-lovat.vercel.app/',
+          link: 'https://artsy-rhq2.vercel.app/',
           logo: '🎨',
         },
         {

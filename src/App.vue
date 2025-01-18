@@ -9,7 +9,8 @@
     <div class="hidden lg:flex space-x-6 mr-12">
       <router-link to="/" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Home</router-link>
       <a href="#about" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">About</a>
-      <a href="#blog" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Blog</a>
+      <a href="#blog-section" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Blog</a>
+
       <a href="#project" class="hover:text-gray-400 hover:border-b-2 border-yellow-500 pb-1">Project</a>
     </div>
 
