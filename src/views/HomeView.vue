@@ -2,8 +2,8 @@
   <section class="md:flex mx-5 md:mx-10 my-5 md:my-5" id="about"
   >
     <div class="grid place-item-center">
-      <h1 class="font-bold text-3xl  md:text-5xl about">Frontend Software Engineer & Technical Writer</h1>
-      <p class="md:text-xl text-sm mt-3">I’m Olagunju Oluwabukola Sussanah, a Software Engineer with 
+      <h1 class="font-bold mt-4 md:mt-6 text-3xl  md:text-5xl about">Frontend Software Engineer & Technical Writer</h1>
+      <p class="md:text-xl text-sm ">I’m Olagunju Oluwabukola Sussanah, a Software Engineer with 
      experience in building user interfaces for 
          digital web products. I prioritize excellence, simplicity 
          and speed with a goal to deliver high-quality work that 
@@ -59,6 +59,8 @@
     <li>Tailwind</li>
     <li>Bootstrap</li>
     <li>Vuetify</li>
+    <li>Pinia</li>
+
    
   </div>
 
@@ -129,6 +131,16 @@ export default {
           link: 'https://artsy-rhq2.vercel.app/',
           logo: '🎨',
         },
+        {
+          title:'Budget Buddy(In progress)',
+          link :'https://budget-buddy-rho-livid.vercel.app/',
+          logo: '💰',
+        },
+        { title: 'Real Haven',
+        link:'https://harven-estates.vercel.app/',
+        logo:'🏠',
+        },
+        
         {
           title: 'Ppds',
           link: 'https://ppds-4ifk.vercel.app/',
