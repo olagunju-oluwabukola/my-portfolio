@@ -39,7 +39,7 @@ export default {
           company: 'Expansion Cyber Technologies',
           title: 'Frontend Developer Intern',
           date: 'August, 2024 - October, 2024',
-          description: `At ECT I was responsible for implementing responsive landing pages, 
+          description: `At ECT I was responsible for implementing responsive landing pages,
               developing reusable UI components, and writing type-safe client-side code. I developed the landing page, among other projects
               ensuring a responsive and user-friendly design.`,
           logo: '/logo-combo-new.png',
@@ -63,10 +63,19 @@ export default {
         {
           company: 'InstaMediRx',
           title: 'Frontend Developer (Volunteer)',
-          date: 'August, 2024 - Present',
+          date: 'August, 2024 - April 2025',
           description: `
             As a volunteer at InstaMediRx, I contributed to the development of an application designed to connect doctors and pharmacists with their clients. The app featured booking systems, online and physical consultation options, and user-friendly interfaces for easy navigation, while providing an intuitive and reliable experience.`,
           logo: '/InstamedixLogo.png',
+        },
+
+         {
+          company: 'Payd',
+          title: 'Frontend Developer Intern',
+          date:'February, 2025 - June 2025',
+          description: `
+            As an Intern, I contributed to the cross border payment solution the team was working on, I had experience on the logic side of frontend development, API integration, collaborated with the backend engineer with code review sessions with constructive feedback and apprasials from the CTO.`,
+          logo: 'https://web.mypayd.app/_next/static/media/authLogo.e6aa01fa.svg',
         },
       ],
     };
