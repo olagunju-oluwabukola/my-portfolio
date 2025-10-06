@@ -54,7 +54,7 @@
   </div>
   <div class=" grid grid-cols-3 md:flex gap-3 mt-3 md:m-10 justify-center md:justify-start mx-6">
     <li>Vue</li>
-    <li>React</li>
+    <li>Nuxt</li>
     <li>Firebase</li>
     <li>Tailwind</li>
     <li>Bootstrap</li>
