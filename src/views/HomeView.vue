@@ -52,7 +52,7 @@
       I've spent few years working on my skills. In no particular order, here are a few of them.
     </div>
   </div>
-  <div class="flex gap-3 mt-3 md:m-10 justify-center md:justify-start">
+  <div class=" grid grid-cols-3 md:flex gap-3 mt-3 md:m-10 justify-center md:justify-start mx-6">
     <li>Vue</li>
     <li>React</li>
     <li>Firebase</li>
